@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Canopy</title>
+  <script src="https://kit.fontawesome.com/294747f67c.js" crossorigin="anonymous"></script>
+   <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
+   <link rel="manifest" href="favico/site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header -->
+   <!-- header -->
+   <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/canopy.png" alt="Canopy logo" />
+        <span>Canopy</span>
+      </a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="index.html#blog">Blog</a>
+        <button class="nav-cta" id="view-catalogue">Go To Garage</button>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container shop-page">
+    <h1>Catalogue</h1>
+    <p class="lead">Explore our models and find the one that suits your journey together.</p>
+
+    <div class="product-grid" id="product-grid">
+      <!-- Product cards (static examples; replace with real content) -->
+      <article class="product-card" data-name="Model A" data-price="₦8,500,000" data-img="images/current.jpg" data-desc="best caerdddhg">
+        <h3>Model A</h3>
+        <p class="price">₦8,500,000</p>
+        <button class="btn btn-outline quick-view">Quick view</button>
+      </article>
+
+      <article class="product-card" data-name="Model B" data-price="₦9,200,000" data-img="images/voyage.jpg">
+        <h3>Model B</h3>
+        <p class="card-price">₦9,200,000</p>
+        <button class="btn btn-outline quick-view">Quick view</button>
+      </article>
+
+      <article class="product-card" data-name="Model C" data-price="₦10,200,000" data-img="images/modelc.jpg">
+        <h3>Model C</h3>
+        <p class="card-price">₦9,200,000</p>
+        <button class="btn btn-outline quick-view">Quick view</button>
+      </article>
+
+      <article class="product-card" data-name="Model D" data-price="₦12,200,000" data-img="images/voyage.jpg">
+        <h3>Model D</h3>
+        <p class="card-price">₦12,200,000</p>
+        <button class="btn btn-outline quick-view">Quick view</button>
+      </article>
+
+      <!-- add more -->
+    </div>
+     <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        
+        <p>Canopy — Luxury minivans with kindness.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html#about">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="mailto:basit4tech@gmail.com">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Canopy</p>
+    </div>
+  </footer>
+
+    <!-- Quick view modal placeholder (JS will toggle) -->
+    <div class="modal" id="quick-modal" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" id="modal-close">✕</button>
+        <img id="modal-img" src="assets/images/product-placeholder.jpg" alt="">
+        <h3 id="modal-name">Model</h3>
+        <p id="modal-price"></p>
+        <p id="modal-desc">Short description goes here.</p>
+        <a href="mailto:basit4tech@gmail.com" class="btn btn-primary">Enquire</a>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
